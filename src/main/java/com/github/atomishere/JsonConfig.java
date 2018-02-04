@@ -12,15 +12,14 @@ import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 
-//TODO: Docs!
 public class JsonConfig<T extends JavaPlugin> extends JsonSection {
     private final File confFile;
 
     /**
      * Create a new config
      *
-     * @param plugin
-     * @param name
+     * @param plugin The owner of the config
+     * @param name the config name
      * @throws IOException if it could not create the config file
      */
     public JsonConfig(@NotNull T plugin, @NotNull String name) throws IOException {

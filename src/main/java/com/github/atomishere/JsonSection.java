@@ -22,7 +22,7 @@ public class JsonSection {
     /**
      * Get an object from from the JSON object
      *
-     * @param key
+     * @param key The key for the value
      * @return null if it could not find the value in the JSON Object
      */
     public Object get(Object key) {
@@ -32,7 +32,7 @@ public class JsonSection {
     /**
      * Get a string from from the JSON object
      *
-     * @param key
+     * @param key The key for the value
      * @return null if it could not find the value in the JSON Object
      */
     public String getString(Object key) {
@@ -46,7 +46,7 @@ public class JsonSection {
     /**
      * Get an Integer from from the JSON object
      *
-     * @param key
+     * @param key The key for the value
      * @return null if it could not find the value in the JSON Object
      */
     public Integer getInteger(Object key) {
@@ -60,7 +60,7 @@ public class JsonSection {
     /**
      * Get a boolean from from the JSON object
      *
-     * @param key
+     * @param key The key for the value
      * @return null if it could not find the value in the JSON Object
      */
     public Boolean getBoolean(Object key) {
@@ -74,7 +74,7 @@ public class JsonSection {
     /**
      * Get a short from from the JSON object
      *
-     * @param key
+     * @param key The key for the value
      * @return null if it could not find the value in the JSON Object
      */
     public Short getShort(Object key) {
@@ -88,7 +88,7 @@ public class JsonSection {
     /**
      * Get a double from from the JSON object
      *
-     * @param key
+     * @param key The key for the value
      * @return null if it could not find the value in the JSON Object
      */
     public Double getDouble(Object key) {
@@ -102,7 +102,7 @@ public class JsonSection {
     /**
      * Get a long from from the JSON object
      *
-     * @param key
+     * @param key The key for the value
      * @return null if it could not find the value in the JSON Object
      */
     public Long getLong(Object key) {
@@ -116,7 +116,7 @@ public class JsonSection {
     /**
      * Get a float from from the JSON object
      *
-     * @param key
+     * @param key The key for the value
      * @return null if it could not find the value in the JSON Object
      */
     public Float getFloat(Object key) {
@@ -130,7 +130,7 @@ public class JsonSection {
     /**
      * Get a list from from the JSON object
      *
-     * @param key
+     * @param key The key for the value
      * @return null if it could not find the value in the JSON Object
      */
     public JSONArray getArray(Object key) {
@@ -144,7 +144,7 @@ public class JsonSection {
     /**
      * Get a section from the JSON object
      *
-     * @param key
+     * @param key The key for the value
      * @return null if it could not find the value in the JSON Object
      */
     public JsonSection getSection(Object key) {
@@ -159,8 +159,8 @@ public class JsonSection {
     /**
      * set a value inside the section
      *
-     * @param key
-     * @param value
+     * @param key The key for the value
+     * @param value The value
      */
     public void set(Object key, Object value) {
         sectionObject.put(key, value);
@@ -169,7 +169,7 @@ public class JsonSection {
     /**
      * Create a section
      *
-     * @param key
+     * @param key The key for the value
      * @return the section that was created
      */
     public JsonSection createSection(Object key) {

@@ -18,7 +18,7 @@ import com.github.atomishere.jsonsimple.parser.JSONParser;
 
 
 /**
- * @author FangYidong<fangyidong@yahoo.com.cn>
+ * @author FangYidong fangyidong@yahoo.com.cn
  */
 public class JSONValue {
 	/**
@@ -112,10 +112,9 @@ public class JSONValue {
      * "this" as the first parameter, use JSONObject.writeJSONString(Map, Writer) or JSONArray.writeJSONString(List, Writer) instead. 
      * 
      * @see JSONObject#writeJSONString(Map, Writer)
-     * @see JSONArray#writeJSONString(List, Writer)
-     * 
+     *
      * @param value
-     * @param writer
+     * @param out
      */
 	public static void writeJSONString(Object value, Writer out) throws IOException {
 		if(value == null){
@@ -233,8 +232,7 @@ public class JSONValue {
 	 * "this" as the parameter, use JSONObject.toJSONString(Map) or JSONArray.toJSONString(List) instead. 
 	 * 
 	 * @see JSONObject#toJSONString(Map)
-	 * @see JSONArray#toJSONString(List)
-	 * 
+	 *
 	 * @param value
 	 * @return JSON text, or "null" if value is null or it's an NaN or an INF number.
 	 */

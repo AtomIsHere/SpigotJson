@@ -3,7 +3,7 @@ package com.github.atomishere.jsonsimple.parser;
 /**
  * ParseException explains why and where the error occurs in source JSON text.
  * 
- * @author FangYidong<fangyidong@yahoo.com.cn>
+ * @author FangYidong fangyidong@yahoo.com.cn
  *
  */
 public class ParseException extends Exception {

@@ -18,7 +18,7 @@ import com.github.atomishere.jsonsimple.JSONObject;
 /**
  * Parser for JSON text. Please note that JSONParser is NOT thread-safe.
  * 
- * @author FangYidong<fangyidong@yahoo.com.cn>
+ * @author FangYidong fangyidong@yahoo.com.cn
  */
 public class JSONParser {
 	public static final int S_INIT=0;
