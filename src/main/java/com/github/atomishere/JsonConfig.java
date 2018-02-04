@@ -23,7 +23,7 @@ public class JsonConfig<T extends JavaPlugin> extends JsonSection {
      * @throws IOException if it could not create the config file
      */
     public JsonConfig(@NotNull T plugin, @NotNull String name) throws IOException {
-        File confFile = new File(plugin.getDataFolder(), name);
+        File confFile = new File(plugin.getDataFolder(), name + ".json");
         if(!confFile.exists()) {
             confFile.createNewFile();
         }
