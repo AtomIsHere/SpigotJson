@@ -2,7 +2,6 @@ package com.github.atomishere;
 
 import com.github.atomishere.jsonsimple.JSONArray;
 import com.github.atomishere.jsonsimple.JSONObject;
-import org.jetbrains.annotations.Nullable;
 
 
 //TODO: Recode getting and setting lists :/
