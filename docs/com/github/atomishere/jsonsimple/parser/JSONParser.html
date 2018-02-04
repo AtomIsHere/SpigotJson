@@ -99,7 +99,7 @@ var activeTableTab = "activeTableTab";
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
-<li>com.github.atomishere.jsonsimple.parser.JSONParser</li>
+<li>com.github.atomishere.spigotjson.jsonsimple.parser.JSONParser</li>
 </ul>
 </li>
 </ul>
@@ -203,19 +203,19 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/atomishere/jsonsimple/parser/JSONParser.html#parse-java.io.Reader-com.github.atomishere.jsonsimple.parser.ContainerFactory-">parse</a></span>(java.io.Reader&nbsp;in,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/atomishere/jsonsimple/parser/JSONParser.html#parse-java.io.Reader-ContainerFactory-">parse</a></span>(java.io.Reader&nbsp;in,
      <a href="../../../../../com/github/atomishere/jsonsimple/parser/ContainerFactory.html" title="interface in com.github.atomishere.jsonsimple.parser">ContainerFactory</a>&nbsp;containerFactory)</code>
 <div class="block">Parse JSON text into java object from the input source.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/atomishere/jsonsimple/parser/JSONParser.html#parse-java.io.Reader-com.github.atomishere.jsonsimple.parser.ContentHandler-">parse</a></span>(java.io.Reader&nbsp;in,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/atomishere/jsonsimple/parser/JSONParser.html#parse-java.io.Reader-ContentHandler-">parse</a></span>(java.io.Reader&nbsp;in,
      <a href="../../../../../com/github/atomishere/jsonsimple/parser/ContentHandler.html" title="interface in com.github.atomishere.jsonsimple.parser">ContentHandler</a>&nbsp;contentHandler)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/atomishere/jsonsimple/parser/JSONParser.html#parse-java.io.Reader-com.github.atomishere.jsonsimple.parser.ContentHandler-boolean-">parse</a></span>(java.io.Reader&nbsp;in,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/atomishere/jsonsimple/parser/JSONParser.html#parse-java.io.Reader-ContentHandler-boolean-">parse</a></span>(java.io.Reader&nbsp;in,
      <a href="../../../../../com/github/atomishere/jsonsimple/parser/ContentHandler.html" title="interface in com.github.atomishere.jsonsimple.parser">ContentHandler</a>&nbsp;contentHandler,
      boolean&nbsp;isResume)</code>
 <div class="block">Stream processing of JSON text.</div>
@@ -227,17 +227,17 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/atomishere/jsonsimple/parser/JSONParser.html#parse-java.lang.String-com.github.atomishere.jsonsimple.parser.ContainerFactory-">parse</a></span>(java.lang.String&nbsp;s,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/atomishere/jsonsimple/parser/JSONParser.html#parse-java.lang.String-ContainerFactory-">parse</a></span>(java.lang.String&nbsp;s,
      <a href="../../../../../com/github/atomishere/jsonsimple/parser/ContainerFactory.html" title="interface in com.github.atomishere.jsonsimple.parser">ContainerFactory</a>&nbsp;containerFactory)</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/atomishere/jsonsimple/parser/JSONParser.html#parse-java.lang.String-com.github.atomishere.jsonsimple.parser.ContentHandler-">parse</a></span>(java.lang.String&nbsp;s,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/atomishere/jsonsimple/parser/JSONParser.html#parse-java.lang.String-ContentHandler-">parse</a></span>(java.lang.String&nbsp;s,
      <a href="../../../../../com/github/atomishere/jsonsimple/parser/ContentHandler.html" title="interface in com.github.atomishere.jsonsimple.parser">ContentHandler</a>&nbsp;contentHandler)</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/atomishere/jsonsimple/parser/JSONParser.html#parse-java.lang.String-com.github.atomishere.jsonsimple.parser.ContentHandler-boolean-">parse</a></span>(java.lang.String&nbsp;s,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/atomishere/jsonsimple/parser/JSONParser.html#parse-java.lang.String-ContentHandler-boolean-">parse</a></span>(java.lang.String&nbsp;s,
      <a href="../../../../../com/github/atomishere/jsonsimple/parser/ContentHandler.html" title="interface in com.github.atomishere.jsonsimple.parser">ContentHandler</a>&nbsp;contentHandler,
      boolean&nbsp;isResume)</code>&nbsp;</td>
 </tr>
@@ -284,7 +284,7 @@ extends java.lang.Object</pre>
 <pre>public static final&nbsp;int S_INIT</pre>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../constant-values.html#com.github.atomishere.jsonsimple.parser.JSONParser.S_INIT">Constant Field Values</a></dd>
+<dd><a href="../../../../../constant-values.html#JSONParser.S_INIT">Constant Field Values</a></dd>
 </dl>
 </li>
 </ul>
@@ -297,7 +297,7 @@ extends java.lang.Object</pre>
 <pre>public static final&nbsp;int S_IN_FINISHED_VALUE</pre>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../constant-values.html#com.github.atomishere.jsonsimple.parser.JSONParser.S_IN_FINISHED_VALUE">Constant Field Values</a></dd>
+<dd><a href="../../../../../constant-values.html#JSONParser.S_IN_FINISHED_VALUE">Constant Field Values</a></dd>
 </dl>
 </li>
 </ul>
@@ -310,7 +310,7 @@ extends java.lang.Object</pre>
 <pre>public static final&nbsp;int S_IN_OBJECT</pre>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../constant-values.html#com.github.atomishere.jsonsimple.parser.JSONParser.S_IN_OBJECT">Constant Field Values</a></dd>
+<dd><a href="../../../../../constant-values.html#JSONParser.S_IN_OBJECT">Constant Field Values</a></dd>
 </dl>
 </li>
 </ul>
@@ -323,7 +323,7 @@ extends java.lang.Object</pre>
 <pre>public static final&nbsp;int S_IN_ARRAY</pre>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../constant-values.html#com.github.atomishere.jsonsimple.parser.JSONParser.S_IN_ARRAY">Constant Field Values</a></dd>
+<dd><a href="../../../../../constant-values.html#JSONParser.S_IN_ARRAY">Constant Field Values</a></dd>
 </dl>
 </li>
 </ul>
@@ -336,7 +336,7 @@ extends java.lang.Object</pre>
 <pre>public static final&nbsp;int S_PASSED_PAIR_KEY</pre>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../constant-values.html#com.github.atomishere.jsonsimple.parser.JSONParser.S_PASSED_PAIR_KEY">Constant Field Values</a></dd>
+<dd><a href="../../../../../constant-values.html#JSONParser.S_PASSED_PAIR_KEY">Constant Field Values</a></dd>
 </dl>
 </li>
 </ul>
@@ -349,7 +349,7 @@ extends java.lang.Object</pre>
 <pre>public static final&nbsp;int S_IN_PAIR_VALUE</pre>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../constant-values.html#com.github.atomishere.jsonsimple.parser.JSONParser.S_IN_PAIR_VALUE">Constant Field Values</a></dd>
+<dd><a href="../../../../../constant-values.html#JSONParser.S_IN_PAIR_VALUE">Constant Field Values</a></dd>
 </dl>
 </li>
 </ul>
@@ -362,7 +362,7 @@ extends java.lang.Object</pre>
 <pre>public static final&nbsp;int S_END</pre>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../constant-values.html#com.github.atomishere.jsonsimple.parser.JSONParser.S_END">Constant Field Values</a></dd>
+<dd><a href="../../../../../constant-values.html#JSONParser.S_END">Constant Field Values</a></dd>
 </dl>
 </li>
 </ul>
@@ -375,7 +375,7 @@ extends java.lang.Object</pre>
 <pre>public static final&nbsp;int S_IN_ERROR</pre>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../constant-values.html#com.github.atomishere.jsonsimple.parser.JSONParser.S_IN_ERROR">Constant Field Values</a></dd>
+<dd><a href="../../../../../constant-values.html#JSONParser.S_IN_ERROR">Constant Field Values</a></dd>
 </dl>
 </li>
 </ul>

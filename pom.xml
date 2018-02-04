@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.atomishere</groupId>
-    <artifactId>SpigotJsonConfig</artifactId>
+    <artifactId>spigot-json</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
