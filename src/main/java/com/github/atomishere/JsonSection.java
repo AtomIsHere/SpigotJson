@@ -3,6 +3,8 @@ package com.github.atomishere;
 import com.github.atomishere.jsonsimple.JSONArray;
 import com.github.atomishere.jsonsimple.JSONObject;
 
+import java.util.Set;
+
 
 //TODO: Recode getting and setting lists :/
 public class JsonSection {
@@ -154,6 +156,10 @@ public class JsonSection {
         }
         //Yes I know this is a bad way to do it.
         return new JsonSection((JSONObject) obj);
+    }
+
+    public Set getKeySet() {
+        return sectionObject.keySet();
     }
 
     /**
