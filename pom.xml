@@ -7,9 +7,18 @@
     <groupId>com.github.atomishere</groupId>
     <artifactId>SpigotJsonConfig</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
-    <name>spigot-json</name>
-    <description></description>
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>Spigot plugin that allows you to easily use JSON</description>
+    <url>https://github.com/AtomIsHere/SpigotJson/</url>
+
+    <licenses>
+        <license>
+            <name>GNU General Public License</name>
+            <url>https://www.gnu.org/licenses/gpl-3.0.txt</url>
+        </license>
+    </licenses>
 
 
     <repositories>
@@ -21,9 +30,17 @@
 
     <developers>
         <developer>
-
+            <name>Archie O'Connor</name>
+            <email>ehhmate@gmail.com</email>
+            <url>https://github.com/AtomIsHere</url>
         </developer>
     </developers>
+
+    <scm>
+        <url>https://github.com/AtomIsHere/SpigotJson</url>
+        <connection>scm:git:git@github.com:AtomIsHere/SpigotJson.git</connection>
+        <developerConnection>scm:git:git@github.com:AtomIsHere/SpigotJson.git</developerConnection>
+    </scm>
 
     <dependencies>
         <!--Spigot API-->
@@ -47,6 +64,7 @@
             <artifactId>annotations-java5</artifactId>
             <version>15.0</version>
         </dependency>
+
     </dependencies>
 
     <build>
