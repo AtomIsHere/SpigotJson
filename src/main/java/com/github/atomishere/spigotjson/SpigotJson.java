@@ -14,9 +14,9 @@ public class SpigotJson extends JavaPlugin {
                 getDataFolder().mkdir();
             }
             getLogger().info("Testing...");
-            JsonConfig<SpigotJson> jsonConfig;
+            JsonPluginConfig<SpigotJson> jsonPluginConfig;
             try {
-                jsonConfig = new JsonConfig<SpigotJson>(this, "example.json");
+                jsonPluginConfig = new JsonPluginConfig<SpigotJson>(this, "example.json");
             } catch (IOException ex) {
                 getLogger().severe("Error while parsing json file.");
                 ex.printStackTrace();
@@ -24,20 +24,20 @@ public class SpigotJson extends JavaPlugin {
             }
 
 
-            jsonConfig.set("string", "string");
-            jsonConfig.set("int", 1);
-            jsonConfig.set("bool", true);
-            jsonConfig.set("short", (short) 1);
-            jsonConfig.set("double", 1D);
-            jsonConfig.set("long", 1L);
-            jsonConfig.set("float", 1F);
+            jsonPluginConfig.set("string", "string");
+            jsonPluginConfig.set("int", 1);
+            jsonPluginConfig.set("bool", true);
+            jsonPluginConfig.set("short", (short) 1);
+            jsonPluginConfig.set("double", 1D);
+            jsonPluginConfig.set("long", 1L);
+            jsonPluginConfig.set("float", 1F);
             JSONArray array = new JSONArray();
             array.add("example1");
             array.add("example2");
-            jsonConfig.set("array", array);
-            jsonConfig.createSection("section").set("example", "example");
+            jsonPluginConfig.set("array", array);
+            jsonPluginConfig.createSection("section").set("example", "example");
             try {
-                jsonConfig.save();
+                jsonPluginConfig.save();
             } catch (IOException ex) {
                 getLogger().severe("error while saving config file");
                 ex.printStackTrace();
@@ -45,14 +45,14 @@ public class SpigotJson extends JavaPlugin {
 
 
             getLogger().info("Printing example config values");
-            getLogger().info(jsonConfig.getString("string"));
-            getLogger().info(jsonConfig.getInteger("int").toString());
-            getLogger().info(jsonConfig.getBoolean("bool").toString());
-            getLogger().info(jsonConfig.getShort("short").toString());
-            getLogger().info(jsonConfig.getDouble("double").toString());
-            getLogger().info(jsonConfig.getLong("long").toString());
-            getLogger().info(jsonConfig.getFloat("float").toString());
-            getLogger().info(jsonConfig.getArray("array").toString());
-            getLogger().info(jsonConfig.getSection("section").getString("example"));
+            getLogger().info(jsonPluginConfig.getString("string"));
+            getLogger().info(jsonPluginConfig.getInteger("int").toString());
+            getLogger().info(jsonPluginConfig.getBoolean("bool").toString());
+            getLogger().info(jsonPluginConfig.getShort("short").toString());
+            getLogger().info(jsonPluginConfig.getDouble("double").toString());
+            getLogger().info(jsonPluginConfig.getLong("long").toString());
+            getLogger().info(jsonPluginConfig.getFloat("float").toString());
+            getLogger().info(jsonPluginConfig.getArray("array").toString());
+            getLogger().info(jsonPluginConfig.getSection("section").getString("example"));
     }
 }
