@@ -1,9 +1,8 @@
 package com.github.atomishere.spigotjson;
 
-import com.github.atomishere.spigotjson.jsonsimple.JSONArray;
 import com.github.atomishere.spigotjson.jsonsimple.JSONObject;
 
-import java.util.Set;
+import java.util.*;
 
 
 //TODO: Recode getting and setting lists :/
@@ -135,12 +134,57 @@ public class JsonSection {
      * @param key The key for the value
      * @return null if it could not find the value in the JSON Object
      */
-    public JSONArray getArray(Object key) {
+    public <T> List<T> getArray(Object key, Class<T> listType) {
         Object obj = sectionObject.get(key);
-        if(!(obj instanceof JSONArray)) {
+        if(!(obj instanceof List)) {
             return null;
         }
-        return (JSONArray) obj;
+
+        List<Object> objList = new ArrayList<Object>((List) obj);
+        List<T> genericList = new ArrayList<T>();
+
+        for(Object object : objList) {
+            if(listType.isInstance(object)) {
+                T castedObj;
+                try {
+                    castedObj = listType.cast(object);
+                } catch(ClassCastException ex) {
+                    continue;
+                }
+
+                genericList.add(castedObj);
+            }
+        }
+
+        return genericList;
+    }
+
+    public <K,S> Map<K, S> getMap(Object key, Class<K> keyType, Class<S> valueType) {
+        Object obj = sectionObject.get(key);
+        if(!(obj instanceof Map)) {
+            return null;
+        }
+
+        Map<Object, Object> objMap = new HashMap<Object, Object>((Map<Object, Object>) obj);
+        Map<K, S> genericMap = new HashMap<K, S>();
+
+        for(Map.Entry<Object, Object> entry : objMap.entrySet()) {
+            if(keyType.isInstance(entry.getKey()) && valueType.isInstance(entry.getValue())) {
+                K genericKey;
+                S genericValue;
+
+                try {
+                    genericKey = keyType.cast(entry.getKey());
+                    genericValue = valueType.cast(entry.getValue());
+                } catch(ClassCastException ex) {
+                    continue;
+                }
+
+                genericMap.put(genericKey, genericValue);
+            }
+        }
+
+        return genericMap;
     }
 
     /**
